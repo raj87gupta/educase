@@ -1,0 +1,79 @@
+.container {
+  top: 0px;
+  margin-left: 30%;
+  width: 375px;
+  height: 812px;
+  /* UI Properties */
+  background: #f7f8f9 0% 0% no-repeat padding-box;
+  opacity: 1;
+  .heading {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 200px;
+    height: 10px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 28px/36px Rubik;
+    letter-spacing: 0px;
+    color: #1d2226;
+    opacity: 1;
+  }
+  .custom-input {
+    position: relative;
+    width: 300px;
+  }
+  
+  .input-label {
+    position: absolute;
+    top: 45%;
+    left: 8px;
+    transform: translateY(-50%);
+    background:#ffffff;
+    padding:1px;
+    color: #666;
+    pointer-events: none;
+    transition: top 0.2s ease-out, font-size 0.2s ease-out, color 0.2s ease-out;
+    >span{
+      color: red;
+    }
+  }
+  
+  
+  .input-field {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .custom-input.focus .input-label,
+  .custom-input.has-value .input-label {
+    top: 0;
+    font-size: 12px;
+    color: #333;
+  }
+
+  .button1 {
+    margin-left: 20px;
+    width: 310px;
+    height: 46px;
+    background: #6C25FF 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    margin-top: 6rem;
+    >a{
+      text-decoration:none !important ;
+    }
+  }
+  .radio{
+    margin-left: 20px;
+    >p{
+    margin-bottom: 1rem;
+    }
+    .no{
+      margin-left: 1rem;
+    }
+  }
+}
