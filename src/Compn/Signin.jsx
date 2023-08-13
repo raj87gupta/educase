@@ -25,6 +25,7 @@ const Login = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         </p>
       </div>
+      <form action="/account" method="submit">
 
       <div
         className={`custom-input ${isFocused ? "focus" : ""} ${
@@ -61,6 +62,7 @@ const Login = () => {
         <HashLink to={"/account"}>Login</HashLink>
         </button>
       </div>
+        </form>
     </div>
   );
 };
