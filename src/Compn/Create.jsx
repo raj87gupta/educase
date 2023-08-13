@@ -22,6 +22,7 @@ const Create = () => {
       <div className="heading">
         <h1>Create your PopX account</h1>
       </div>
+      <form action="/account" method="submit">
       <div
         className={`custom-input ${isFocused ? "focus" : ""} ${
           hasValue ? "has-value" : ""
@@ -126,6 +127,7 @@ const Create = () => {
       <button className="button1">
         <HashLink to={"/account"}>Create Account</HashLink>
       </button>
+        </form>
     </div>
   );
 };
