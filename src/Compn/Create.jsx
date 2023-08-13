@@ -49,7 +49,7 @@ const Create = () => {
           Phone number<span>*</span>
         </label>
         <input
-          type="number"
+          type="text"
           required
           className="input-field"
           onFocus={handleFocus}
