@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "../Style/si.css";
-import { HashLink } from "react-router-hash-link";
 const Login = () => {
   const [isFocused, setIsFocused] = useState(false);
   const [hasValue, setHasValue] = useState(false);
