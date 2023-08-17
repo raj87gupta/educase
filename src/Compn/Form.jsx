@@ -1,4 +1,3 @@
-import { HashLink } from "react-router-hash-link";
 import React from "react";
 import "../Style/Form.css";
 const Form = () => {
@@ -8,12 +7,16 @@ const Form = () => {
       <p className="lorem">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       </p>
+      <form action="/create">
       <button className="button2">
-        <HashLink to={"/create"}>Create Account</HashLink>
+        Create Account
       </button>
+      </form>
+      <form action="/signin">
       <button className="button1">
-        <HashLink to={"/signin"}>Already Registered? Login</HashLink>
+        Already Registered? Login
       </button>
+      </form>
     </div>
   );
 };
