@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import "../Style/create.css";
-import { HashLink } from "react-router-hash-link";
 const Create = () => {
   const [isFocused, setIsFocused] = useState(false);
   const [hasValue, setHasValue] = useState(false);
@@ -22,7 +21,7 @@ const Create = () => {
       <div className="heading">
         <h1>Create your PopX account</h1>
       </div>
-      <form action="/account" method="submit">
+      <form action="/account" >
       <div
         className={`custom-input ${isFocused ? "focus" : ""} ${
           hasValue ? "has-value" : ""
@@ -116,18 +115,18 @@ const Create = () => {
         <p>
           Are you an Agency?<span>*</span>
         </p>
-        <input type="radio" name="radio" />
+        <input type="radio" name="radio" required />
         <label className="yes" for="html">
           Yes
         </label>
-        <input className="no" type="radio" name="radio" />
+        <input className="no" type="radio" name="radio" required />
         <label for="html">No</label>
       </div>
 
-      <button className="button1">
-        <HashLink to={"/account"}>Create Account</HashLink>
+      <button className="button1" type="submit">
+        Create Account
       </button>
-        </form>
+      </form>
     </div>
   );
 };
